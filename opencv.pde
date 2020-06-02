@@ -76,6 +76,6 @@ void GUI_setup() {
 
 void userNumSetup() {
 
-  Integer num = Integer.parseInt(new UiBooster().showTextInputDialog("Enter the number of users you would like to be allowed to view the screen. Enter '1' if you are the only user."));
+  Integer num = new UiBooster().showSlider("Enter the number of users you would like to be allowed to view the screen. Enter '1' if you are the only user.", "Number of Users", 0, 10, 5);
   numUsers = num;
 }
